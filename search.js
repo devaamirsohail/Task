@@ -13,13 +13,17 @@ function interviewCriminals(input) {
     if (key.toLowerCase().includes(changedInput)) {
       const result = criminals.get(key);
       return `Name=${key}, Alias=${result}`;
-    } else if (value) {
+    }
+  }
+  for (const [key, value] of criminals.entries()) {
+    if (value) {
       if (value.toLowerCase().includes(changedInput)) {
         const result = criminals.get(key);
         return `Name=${key}, Alias=${result}`;
       }
     }
   }
+  return `No match`;
 }
 
-console.log(interviewCriminals("Rabbit"));
+console.log(interviewCriminals("erre"));
