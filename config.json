@@ -1,0 +1,7 @@
+{
+  "run_these": [
+    { "program_path": "program1.js", "max_run_time_secs": 10 },
+    { "program_path": "program2.js", "max_run_time_secs": 2 },
+    { "program_path": "program3.js", "max_run_time_secs": 20 }
+  ]
+}
